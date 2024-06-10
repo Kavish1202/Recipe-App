@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe App</h1>
+  </header>
+  <main>
+    <section class="recipes-section">
+      <h2>Recipes</h2>
+      <table id="recipesTable">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Ingredients</th>
+            <th>Instructions</th>
+            <th>Cooking Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+    <section class="form-section">
+      <h2>Add/Update Recipe</h2>
+      <form id="recipeForm">
+        <input type="hidden" id="recipeId" />
+        <div class="form-group">
+          <input type="text" id="title" placeholder="Title" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="ingredients" placeholder="Ingredients (comma-separated)" required />
+        </div>
+        <div class="form-group">
+          <input type="text" id="instructions" placeholder="Instructions" required />
+        </div>
+        <div class="form-group">
+          <input type="number" id="cookingTime" placeholder="Cooking Time (minutes)" required />
+        </div>
+        <button type="submit">Save Recipe</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Recipe App</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
